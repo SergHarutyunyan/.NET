@@ -1,4 +1,6 @@
-﻿using AndrewTroelsen.Value_Reference_Types;
+﻿using AndrewTroelsen.Custom_Constructor_Init_Syntax;
+using AndrewTroelsen.Has_a_Relationship;
+using AndrewTroelsen.Value_Reference_Types;
 using System;
 
 namespace AndrewTroelsen
@@ -73,6 +75,25 @@ namespace AndrewTroelsen
 
             //TesterMethod(new string[4]);
             //TesterMethod(null);
+
+            #endregion
+
+            #region Calling Custom Constructors with Initialization Syntax
+
+            //Point GoldPoint = new Point(PointColor.Gold) { X = 90, Y = 20 };
+            //GoldPoint.DisplayStats();
+
+            //Console.WriteLine();
+
+            //Point BloodRedPoint = new Point() { X = 90, Y = 20 };
+            //BloodRedPoint.DisplayStats();
+
+            #endregion
+
+            #region Inheritance: Has-a Relationship
+
+            //Music music = new Music();
+            //music.TurnRadioOn();
 
             #endregion
 
