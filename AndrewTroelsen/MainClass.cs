@@ -1,4 +1,5 @@
 ﻿using AndrewTroelsen.Custom_Constructor_Init_Syntax;
+using AndrewTroelsen.Has_a_Relationship;
 using AndrewTroelsen.Value_Reference_Types;
 using System;
 
@@ -86,6 +87,13 @@ namespace AndrewTroelsen
 
             //Point BloodRedPoint = new Point() { X = 90, Y = 20 };
             //BloodRedPoint.DisplayStats();
+
+            #endregion
+
+            #region Inheritance: Has-a Relationship
+
+            //Music music = new Music();
+            //music.TurnRadioOn();
 
             #endregion
 

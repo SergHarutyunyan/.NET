@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExtensionMethods\StringExt.cs" />
+    <Compile Include="Has-a Relationship\Music.cs" />
+    <Compile Include="Has-a Relationship\Radio.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Custom Constructor Init Syntax\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
