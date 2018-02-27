@@ -97,6 +97,27 @@ namespace AndrewTroelsen
 
             #endregion
 
+            #region Boxing
+
+            int i = 5;
+            object o = i;  // o is a reference type, it stored on the heap.
+            i = 20;
+
+            Console.WriteLine($"i = {i}\no = {o}");
+
+            object a = o;
+            o = 99; // Just switch the reference, now it's pointing to the new object. The previous value - 5 will be garbage collected.
+
+            Console.WriteLine($"\na = {a}\no = {o}");
+
+            int temp = (int)o;  // (int)o just returns number 99.
+            
+            // There is no way to edit the created object. We are just creating others by assigning them another value.
+            // So Value inside the box is immutable. It can't be changed.
+            // This same thing is related to all System.ValueTypes (structs).
+
+            #endregion  
+
             Console.ReadLine();
         }
 

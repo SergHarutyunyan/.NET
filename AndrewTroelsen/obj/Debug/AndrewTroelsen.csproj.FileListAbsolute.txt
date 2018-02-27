@@ -12,3 +12,10 @@ D:\GIT\NET\C#\AndrewTroelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.csprojResol
 D:\GIT\NET\C#\AndrewTroelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.csproj.CoreCompileInputs.cache
 D:\GIT\NET\C#\AndrewTroelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.exe
 D:\GIT\NET\C#\AndrewTroelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.pdb
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\bin\Debug\AndrewTroelsen.exe.config
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\bin\Debug\AndrewTroelsen.exe
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\bin\Debug\AndrewTroelsen.pdb
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.csprojResolveAssemblyReference.cache
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.csproj.CoreCompileInputs.cache
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.exe
+E:\Documents\NET\C-Troelsen\AndrewTroelsen\obj\Debug\AndrewTroelsen.pdb
