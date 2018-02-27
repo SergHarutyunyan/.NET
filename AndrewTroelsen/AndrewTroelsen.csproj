@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ExtensionMethods\StringExt.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="Custom Constructor Init Syntax\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Value-Reference Types\Person.cs" />
   </ItemGroup>
