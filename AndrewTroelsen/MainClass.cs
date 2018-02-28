@@ -2,6 +2,8 @@
 using AndrewTroelsen.Has_a_Relationship;
 using AndrewTroelsen.Value_Reference_Types;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace AndrewTroelsen
 {
@@ -46,7 +48,7 @@ namespace AndrewTroelsen
 
             #endregion
 
-            #region Value/Reference Types
+            #region Value/Reference Types (With Method)
 
             //Console.WriteLine("***** Passing Person object by value *****");
 
@@ -63,7 +65,7 @@ namespace AndrewTroelsen
 
             #endregion
 
-            #region The Null Coalescing Operator
+            #region The Null Coalescing Operator (With Method)
 
             //int? age = getNullableInt() ?? 10;
 
@@ -71,7 +73,7 @@ namespace AndrewTroelsen
 
             #endregion
 
-            #region The Null Conditional Operator
+            #region The Null Conditional Operator (With Method)
 
             //TesterMethod(new string[4]);
             //TesterMethod(null);
@@ -99,22 +101,33 @@ namespace AndrewTroelsen
 
             #region Boxing
 
-            int i = 5;
-            object o = i;  // o is a reference type, it stored on the heap.
-            i = 20;
+            //int i = 5;
+            //object o = i;  // o is a reference type, it stored on the heap.
+            //i = 20;
 
-            Console.WriteLine($"i = {i}\no = {o}");
+            //Console.WriteLine($"i = {i}\no = {o}");
 
-            object a = o;
-            o = 99; // Just switch the reference, now it's pointing to the new object. The previous value - 5 will be garbage collected.
+            //object a = o;
+            //o = 99; // Just switch the reference, now it's pointing to the new object. The previous value - 5 will be garbage collected.
 
-            Console.WriteLine($"\na = {a}\no = {o}");
+            //Console.WriteLine($"\na = {a}\no = {o}");
 
-            int temp = (int)o;  // (int)o just returns number 99.
-            
-            // There is no way to edit the created object. We are just creating others by assigning them another value.
-            // So Value inside the box is immutable. It can't be changed.
-            // This same thing is related to all System.ValueTypes (structs).
+            //int temp = (int)o;  // (int)o just returns number 99.
+
+            //// There is no way to edit the created object. We are just creating others by assigning them another value.
+            //// So Value inside the box is immutable. It can't be changed.
+            //// This same thing is related to all System.ValueTypes (structs).
+
+            //ArrayList arrayList = new ArrayList();      // ArrayList Add method adding object. So it uses boxing.
+            //arrayList.Add(5);                           // So it is slowing the work and take more memory on the heap.
+            //arrayList.Add(6);
+            ////  Arraylist stored on the heap and also it's each member pointing to the boxed object. 
+
+            //List<int> list = new List<int>();           // When generics comes, this problem solved. Now it stored as an int.
+            //list.Add(5);
+            //list.Add(6);
+            //list.Add(7);
+            // List stored on the heap but it's members are not boxed.
 
             #endregion  
 
