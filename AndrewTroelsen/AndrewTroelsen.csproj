@@ -48,6 +48,10 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="Custom Constructor Init Syntax\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type Conversion Operator\Base.cs" />
+    <Compile Include="Type Conversion Operator\Car.cs" />
+    <Compile Include="Type Conversion Operator\Derived.cs" />
+    <Compile Include="Type Conversion Operator\Vehicle.cs" />
     <Compile Include="Value-Reference Types\Person.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using AndrewTroelsen.Custom_Constructor_Init_Syntax;
 using AndrewTroelsen.Has_a_Relationship;
+using AndrewTroelsen.Type_Conversion_Operator;
 using AndrewTroelsen.Value_Reference_Types;
 using System;
 using System.Collections;
@@ -129,7 +130,48 @@ namespace AndrewTroelsen
             //list.Add(7);
             // List stored on the heap but it's members are not boxed.
 
-            #endregion  
+            #endregion
+
+            #region Type Conversion Operators
+
+            /********************************* operator keywoard **************************************/
+
+
+            //Car bmw = new Car { Modelname = "X5", ProductionYear = 2007 };
+            //Vehicle vehicle = bmw;
+
+            //Console.WriteLine(vehicle.productionYear);
+
+            /********************************* AS operator **************************************/
+
+            var randy = new Random();
+            bool randomBool = randy.Next() % 2 == 0;
+
+            Base b = randomBool ? new Base() : new Derived();
+            // In that case we cant write here like below. Because it can be new Base().
+            // Derived d = (Derived)b;
+
+            // So in that case we are doing like this.
+            Derived d = b as Derived; 
+            // This means - try to cast, if succeded return me new Derived(), if not return me null.
+
+            if(d == null)
+                Console.WriteLine("d: Convertion failed.");
+            else
+                Console.WriteLine("d: Convertion succeded.");
+
+            /********************************* IS operator **************************************/
+
+            Derived d2 = null;
+            if (b is Derived)
+                d2 = (Derived)b;
+
+            if (d2 == null)
+                Console.WriteLine("d2: Convertion failed.");
+            else
+                Console.WriteLine("d2: Convertion succeded.");
+
+            #endregion
 
             Console.ReadLine();
         }
