@@ -132,44 +132,68 @@ namespace AndrewTroelsen
 
             #endregion
 
+            #region Type Object Pointer and Sync block
+
+            /*
+                Person p = new Person();
+                p.personAge = 7;
+
+                Person p1 = new Person();
+
+                // Object that was created on the heap, containing -
+                1. Sync Block
+                2. Type Object Pointer
+                3. All the stuff that the object include (members)
+
+                1.
+                // Sync Block is just a 4 bytes of area, that stores a value, when we lock(p) that specified instance.
+                // This was used in Threading.
+
+                2.
+                // For every Person object 2. Type Objcet Pointer is just a pointer to the Person Type, 
+                // which is only one object on the heap. So that Person Type is shared among all Person instances.                              
+            */
+
+            #endregion
+
             #region Type Conversion Operators
 
-            /********************************* operator keywoard **************************************/
+            ///********************************* operator keywoard **************************************/
 
 
-            //Car bmw = new Car { Modelname = "X5", ProductionYear = 2007 };
-            //Vehicle vehicle = bmw;
+            ////Car bmw = new Car { Modelname = "X5", ProductionYear = 2007 };
+            ////Vehicle vehicle = bmw;
 
-            //Console.WriteLine(vehicle.productionYear);
+            ////Console.WriteLine(vehicle.productionYear);
 
-            /********************************* AS operator **************************************/
+            ///********************************* AS operator **************************************/
 
-            var randy = new Random();
-            bool randomBool = randy.Next() % 2 == 0;
+            //var randy = new Random();
+            //bool randomBool = randy.Next() % 2 == 0;
 
-            Base b = randomBool ? new Base() : new Derived();
-            // In that case we cant write here like below. Because it can be new Base().
-            // Derived d = (Derived)b;
+            //Base b = randomBool ? new Base() : new Derived();
+            //// In that case we cant write here like below. Because it can be new Base().
+            //// Derived d = (Derived)b;
 
-            // So in that case we are doing like this.
-            Derived d = b as Derived; 
-            // This means - try to cast, if succeded return me new Derived(), if not return me null.
+            //// So in that case we are doing like this.
+            //Derived d = b as Derived; 
+            //// This means - try to cast, if succeded return me new Derived(), if not return me null.
 
-            if(d == null)
-                Console.WriteLine("d: Convertion failed.");
-            else
-                Console.WriteLine("d: Convertion succeded.");
+            //if(d == null)
+            //    Console.WriteLine("d: Convertion failed.");
+            //else
+            //    Console.WriteLine("d: Convertion succeded.");
 
-            /********************************* IS operator **************************************/
+            ///********************************* IS operator **************************************/
 
-            Derived d2 = null;
-            if (b is Derived)
-                d2 = (Derived)b;
+            //Derived d2 = null;
+            //if (b is Derived)
+            //    d2 = (Derived)b;
 
-            if (d2 == null)
-                Console.WriteLine("d2: Convertion failed.");
-            else
-                Console.WriteLine("d2: Convertion succeded.");
+            //if (d2 == null)
+            //    Console.WriteLine("d2: Convertion failed.");
+            //else
+            //    Console.WriteLine("d2: Convertion succeded.");
 
             #endregion
 
