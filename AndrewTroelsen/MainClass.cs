@@ -197,6 +197,36 @@ namespace AndrewTroelsen
 
             #endregion
 
+            #region All about Static
+
+            /*
+                Static variable in that class will be shared among all instances of that class.
+                But...
+                When we specifying the variable static, it is loaded in memory at compile time, like global variables in C or C++.
+
+                Static variables in compile time, are initialized in static constructer. Even if we haven't created static constructor
+                explicitely, and just wrote like static int a = 7;
+                Static constructors called in begginning and only once.
+
+                Stack and Heap are called dynamic memory. 
+                Static variables stored not in stack, neither in heap. It Stored in static memory.
+
+                Loader Heap:            contains CLR structures and the type system
+                High Frequency Heap:    statics, MethodTables, FieldDescs, interface map
+                Low Frequency Heap:     EEClass, ClassLoader and lookup tables
+                Stub Heap:              stubs for CAS, COM wrappers, PInvoke
+                Large Object Heap:      memory allocations that require more than 85k bytes
+                GC Heap:                user allocated heap memory private to the app
+                JIT Code Heap:          memory allocated by mscoreee (Execution Engine) and the JIT compiler for managed code
+                Process/Base Heap:      interop/unmanaged allocations, native memory, etc
+
+                Usually, the “heaps” that most people refer to or know about are the “GC Heap” and the LOH.
+                GC Heap is shared among app-domains and GC will work only on that.
+                
+            */
+
+            #endregion
+
             Console.ReadLine();
         }
 
