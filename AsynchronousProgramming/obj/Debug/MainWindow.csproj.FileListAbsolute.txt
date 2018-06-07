@@ -1,0 +1,23 @@
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await\CountSum.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\App.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow_MarkupCompile.cache
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow_MarkupCompile.lref
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\bin\Debug\MainWindow.exe.config
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\bin\Debug\MainWindow.exe
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\bin\Debug\MainWindow.pdb
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await\CountSum.baml
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.baml
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.g.resources
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.Properties.Resources.resources
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.csproj.GenerateResource.Cache
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.csproj.CoreCompileInputs.cache
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.exe
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.pdb
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await With Continuation\AsyncWithContinuation.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await With Continuation\AsyncWithContinuation.baml
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Download Data Async\DownloadWindow.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Download Data Async\DownloadWindow.baml
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\MainWindow.csprojResolveAssemblyReference.cache
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await 2\LoginWindow.g.cs
+D:\GIT\NET\C#\AsynchronousProgramming\MainWindow\obj\Debug\Async And Await 2\LoginWindow.baml

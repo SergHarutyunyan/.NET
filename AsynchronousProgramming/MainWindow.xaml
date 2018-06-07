@@ -1,0 +1,25 @@
+﻿<Window x:Class="MainWindow.SwitchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainWindow"
+        mc:Ignorable="d"
+          Title="Asynchronous Programming" Height="250" Width="250" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <ListBox>
+            <ListBoxItem Padding="0,5" HorizontalAlignment="Center">
+                <Button x:Name="DownloadDataAsync" Height="30" Width="200" Click="DownloadDataAsync_Click">Download Data Async</Button>
+            </ListBoxItem>
+            <ListBoxItem Padding="0,5" HorizontalAlignment="Center">
+                <Button x:Name="AsyncWithContinuation" Height="30" Width="200" Click="AsyncWithContinuation_Click">Async And Await Continuation</Button>
+            </ListBoxItem>
+            <ListBoxItem Padding="0,5" HorizontalAlignment="Center">
+                <Button x:Name="AsyncAndAwait1" Height="30" Width="200" Click="AsyncAndAwait1_Click">Async And Await Example 1</Button>
+            </ListBoxItem>
+            <ListBoxItem Padding="0,5" HorizontalAlignment="Center">
+                <Button x:Name="AsyncAndAwait2" Height="30" Width="200" Click="AsyncAndAwait2_Click">Async And Await Example 2</Button>
+            </ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>
