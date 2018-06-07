@@ -1,12 +1,12 @@
-﻿using AndrewTroelsen.Custom_Constructor_Init_Syntax;
-using AndrewTroelsen.Has_a_Relationship;
-using AndrewTroelsen.Type_Conversion_Operator;
-using AndrewTroelsen.Value_Reference_Types;
+﻿using LearnNET.Custom_Constructor_Init_Syntax;
+using LearnNET.Has_a_Relationship;
+using LearnNET.Type_Conversion_Operator;
+using LearnNET.Value_Reference_Types;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace AndrewTroelsen
+namespace LearnNET
 {
     internal class MainClass
     {

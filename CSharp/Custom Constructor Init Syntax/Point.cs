@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndrewTroelsen.Custom_Constructor_Init_Syntax
+namespace LearnNET.Custom_Constructor_Init_Syntax
 {
     enum PointColor
     {

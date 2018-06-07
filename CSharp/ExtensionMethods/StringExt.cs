@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndrewTroelsen.ExtensionMethods
+namespace LearnNET.ExtensionMethods
 {
     public static class StringExt
     {

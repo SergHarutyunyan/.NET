@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndrewTroelsen.Type_Conversion_Operator
+namespace LearnNET.Type_Conversion_Operator
 {
     class Car
     {

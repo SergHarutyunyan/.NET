@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndrewTroelsen.Has_a_Relationship
+namespace LearnNET.Has_a_Relationship
 {
     class Radio
     {

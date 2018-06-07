@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D2102799-B5AD-4BF6-B58C-A12C3E0CC3D8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AndrewTroelsen</RootNamespace>
-    <AssemblyName>AndrewTroelsen</AssemblyName>
+    <RootNamespace>Learn</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

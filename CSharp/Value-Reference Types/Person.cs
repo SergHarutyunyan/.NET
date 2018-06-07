@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndrewTroelsen.Value_Reference_Types
+namespace LearnNET.Value_Reference_Types
 {
     internal class Person
     {
