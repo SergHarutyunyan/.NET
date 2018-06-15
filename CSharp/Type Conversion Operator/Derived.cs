@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearnNET.Type_Conversion_Operator
+namespace Learn.Type_Conversion_Operator
 {
     class Derived : Base
     {

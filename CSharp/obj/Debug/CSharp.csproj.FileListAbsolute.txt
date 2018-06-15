@@ -1,0 +1,7 @@
+D:\GIT\NET\LearnNET\CSharp\bin\Debug\CSharp.exe.config
+D:\GIT\NET\LearnNET\CSharp\bin\Debug\CSharp.exe
+D:\GIT\NET\LearnNET\CSharp\bin\Debug\CSharp.pdb
+D:\GIT\NET\LearnNET\CSharp\obj\Debug\CSharp.csproj.CoreCompileInputs.cache
+D:\GIT\NET\LearnNET\CSharp\obj\Debug\CSharp.exe
+D:\GIT\NET\LearnNET\CSharp\obj\Debug\CSharp.pdb
+D:\GIT\NET\LearnNET\CSharp\obj\Debug\CSharp.csprojResolveAssemblyReference.cache

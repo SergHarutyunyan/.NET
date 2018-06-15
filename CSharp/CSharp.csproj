@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,12 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract and Sealed\AbstractExample.cs" />
+    <Compile Include="Abstract and Sealed\SealedExample.cs" />
+    <Compile Include="Attributes\MyClass.cs" />
+    <Compile Include="DelegatesAndEvents\DelegateContainer.cs" />
+    <Compile Include="DelegatesAndEvents\EventContainer.cs" />
+    <Compile Include="Exceptions\ExceptionExample.cs" />
     <Compile Include="ExtensionMethods\StringExt.cs" />
+    <Compile Include="FileSystemAndIO\RecursiveFileSearch.cs" />
     <Compile Include="Has-a Relationship\Music.cs" />
     <Compile Include="Has-a Relationship\Radio.cs" />
+    <Compile Include="Interfaces\Example.cs" />
+    <Compile Include="Interfaces\IExample.cs" />
+    <Compile Include="LocalFunctionsWithExceptions\LocalFuncExample.cs" />
     <Compile Include="MainClass.cs" />
-    <Compile Include="Custom Constructor Init Syntax\Point.cs" />
+    <Compile Include="Constructor and Destructor\Point.cs" />
+    <Compile Include="Nested Types\Container.cs" />
+    <Compile Include="OperatorOverloading\Complex.cs" />
+    <Compile Include="PartialClass\PartialExample.cs" />
+    <Compile Include="PartialClass\PartialExample_2.cs" />
+    <Compile Include="Polymorphism\Base.cs" />
+    <Compile Include="Polymorphism\Derived.cs" />
+    <Compile Include="Polymorphism\DerivingDerived.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefReturns and RefLocals\RefExample.cs" />
+    <Compile Include="Structs\Structs.cs" />
     <Compile Include="Type Conversion Operator\Base.cs" />
     <Compile Include="Type Conversion Operator\Car.cs" />
     <Compile Include="Type Conversion Operator\Derived.cs" />

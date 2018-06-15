@@ -1,12 +1,27 @@
-﻿using LearnNET.Custom_Constructor_Init_Syntax;
-using LearnNET.Has_a_Relationship;
-using LearnNET.Type_Conversion_Operator;
-using LearnNET.Value_Reference_Types;
+﻿using Learn.Attributes;
+using Learn.Interfaces;
+using Learn.OperatorOverloading;
+using Learn.PartialClass;
+using Learn.Structs;
+using Learn.Constructor_and_Destructor;
+using Learn.Has_a_Relationship;
+using Learn.Type_Conversion_Operator;
+using Learn.Value_Reference_Types;
+using Learn.Polymorphism;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using Learn.RefReturns_and_RefLocals;
+using Learn.LocalFunctionsWithExceptions;
+using Learn.ExtensionMethods;
+using static Learn.DelegatesAndEvents.DelegateContainer;
+using Learn.DelegatesAndEvents;
+using Learn.Exceptions;
+using Learn.FileSystemAndIO;
+using Microsoft.VisualBasic.FileIO;
 
-namespace LearnNET
+namespace Learn
 {
     internal class MainClass
     {
@@ -49,6 +64,15 @@ namespace LearnNET
 
             #endregion
 
+            #region Extension Methods
+
+            //String a = "sa";
+            //a = a.changeFirstLettersCase();
+
+            //Console.WriteLine(a);
+
+            #endregion
+
             #region Value/Reference Types (With Method)
 
             //Console.WriteLine("***** Passing Person object by value *****");
@@ -69,7 +93,6 @@ namespace LearnNET
             #region The Null Coalescing Operator (With Method)
 
             //int? age = getNullableInt() ?? 10;
-
             //Console.WriteLine(age);
 
             #endregion
@@ -81,7 +104,7 @@ namespace LearnNET
 
             #endregion
 
-            #region Calling Custom Constructors with Initialization Syntax
+            #region Constructor and Destructor
 
             //Point GoldPoint = new Point(PointColor.Gold) { X = 90, Y = 20 };
             //GoldPoint.DisplayStats();
@@ -90,6 +113,11 @@ namespace LearnNET
 
             //Point BloodRedPoint = new Point() { X = 90, Y = 20 };
             //BloodRedPoint.DisplayStats();
+
+
+            // DestructorExample destructorExample = new DestructorExample();
+            // Destructors are not called directly in the source code but during garbage collection. 
+
 
             #endregion
 
@@ -204,7 +232,7 @@ namespace LearnNET
                 But...
                 When we specifying the variable static, it is loaded in memory at compile time, like global variables in C or C++.
 
-                Static variables in compile time, are initialized in static constructer. Even if we haven't created static constructor
+                Static variables in compile time, are initialized in static constructor. Even if we haven't created static constructor
                 explicitely, and just wrote like static int a = 7;
                 Static constructors called in begginning and only once.
 
@@ -227,8 +255,274 @@ namespace LearnNET
 
             #endregion
 
+            #region Interfaces
+
+            //Example example = new Example();
+            //example.fly();
+            //example.CallExplicitFly();              // Calling Explicit implementation
+
+            //Console.WriteLine();
+
+            //IExample example1 = new Example();
+            //example1.fly();                         // Calling Explicit implementation
+
+            #endregion
+
+            #region Operator Overloading
+
+            //Complex complex1 = new Complex(1, 5);
+            //Complex complex2 = new Complex(3, 8);
+            //Complex complex3 = new Complex(1, 5);
+
+            //Complex sum = complex1 + complex2;
+
+            //Console.WriteLine(sum.ToString());
+            //Console.WriteLine();
+
+            //Console.WriteLine(complex1 == complex2);
+            //Console.WriteLine(complex1 == complex3);            // Cause we have explicitely overloaded == and != operators
+            //                                                    // complex1 will be equal to complex3 (because of equal real and imaginary values)
+            //                                                    // So if we delete overloaded operators, == operator will check the references,
+            //                                                    // so it will return false.
+            #endregion
+
+            #region Partial Class
+
+            //PartialExample partialExample = new PartialExample();
+            //partialExample.method1();
+            //partialExample.method2();
+
+            #endregion
+
+            #region Out Parameters
+
+            //int a;
+            //int b = 7;
+
+            //OutTest(out a);
+            //OutTest(out b);
+            //OutTest(out int c);
+
+            //Console.WriteLine($"a = {a}\nb = {b}\nc = {c}");
+            //a = c;
+
+            #endregion
+
+            #region Attributes
+
+            //MyClass myClass = new MyClass();
+            //myClass.Old();                          // Compile time error - "Don't use Old method, please use New method"
+
+            #endregion
+
+            #region Structs
+
+            //Struct1 struct1 = new Struct1(1, 2);
+            //Struct1 struct2 = new Struct1(3, 4);
+            //Console.WriteLine(struct1.d);
+            //Console.WriteLine(struct1.e);
+            //Console.WriteLine(Struct1.b);
+
+            //Console.WriteLine();
+
+            //Console.WriteLine(struct1.Equals(struct2));
+            //Console.WriteLine(struct2.d);
+
+            //Console.WriteLine();
+
+            //Struct1? nullableStruct1 = new Struct1?(new Struct1(5,6));
+            //Console.WriteLine(nullableStruct1.HasValue);
+            //Console.WriteLine(nullableStruct1.Value.d);
+            //nullableStruct1 = null;
+            //Console.WriteLine(nullableStruct1.HasValue);
+
+            //Console.WriteLine();
+
+            //Struct1 struct3 = new Struct1();
+            //Console.WriteLine(struct3.d);
+            //Console.WriteLine(struct3.e);
+
+            #endregion
+
+            #region Polymorphism
+
+            //Polymorphism.Base baseClass = new Polymorphism.Base();
+            //Polymorphism.Derived derived = new Polymorphism.Derived();
+            //Polymorphism.Base baseDerived = new Polymorphism.Derived();
+
+            //Console.Write("Calling baseClass Print - "); baseClass.Print();
+            //Console.Write("Calling baseClass PrintVirtual - "); baseClass.PrintVirtual();
+            //Console.WriteLine();
+
+            //Console.Write("Calling derived Print - "); derived.Print();
+            //Console.Write("Calling derived PrintVirtual - "); derived.PrintVirtual();
+            //Console.WriteLine();
+
+            //Console.Write("Calling baseDerived Print - "); baseDerived.Print();
+            //Console.Write("Calling baseDerived PrintVirtual - "); baseDerived.PrintVirtual();
+            //Console.WriteLine();
+
+            //Polymorphism.DerivingDerived derivingDerived = new Polymorphism.DerivingDerived();
+            //Polymorphism.Derived derivedDerivingDerived = new Polymorphism.DerivingDerived();
+            //Polymorphism.Base baseDerivingDerived = new Polymorphism.DerivingDerived();
+
+            //Console.Write("Calling derivingDerived Print - "); derivingDerived.Print();
+            //Console.Write("Calling derivingDerived PrintVirtual - "); derivingDerived.PrintVirtual();
+            //Console.Write("Calling derivingDerived base Print - "); derivingDerived.PrintBase();
+            //Console.Write("Calling derivingDerived base PrintVirtual - "); derivingDerived.PrintBaseVirtual();
+            //Console.WriteLine();
+
+
+            //Console.Write("Calling derivedDerivingDerived Print - "); derivedDerivingDerived.Print();
+            //Console.Write("Calling derivedDerivingDerived PrintVirtual - "); derivedDerivingDerived.PrintVirtual();
+            //Console.WriteLine();
+
+            //Console.Write("Calling baseDerivingDerived Print - "); baseDerivingDerived.Print();
+            //Console.Write("Calling baseDerivingDerived PrintVirtual - "); baseDerivingDerived.PrintVirtual();
+            //Console.WriteLine();
+
+            //derived.PrintNumber(4);                         // This will call not the overridden method.
+            //((Polymorphism.Base)derived).PrintNumber(4);    // This will call the overridden method.
+
+            #endregion
+
+            #region Ref Return Values
+
+            //string[] b = { "a", "b", "c" };
+            //RefExample<string> refExampleStr = new RefExample<string>();
+            //ref string loc2 = ref refExampleStr.GetIndex(ref b, 1);
+
+            //Console.WriteLine(loc2);
+            //loc2 = "d";
+            //Console.WriteLine(b[1]);
+
+            #endregion
+
+            #region Local Functions in use with Exceptions
+
+            /*
+                 IN THIS EXAMPLE - The exception surfaces only when you iterate the numbers, and not when you retrieve the enumerator
+             */
+
+            //IEnumerable<int> ienum =  WithoutLocalFuncExample.OddSequence(50, 110);
+            //Console.WriteLine("Retrieved enumerator...");
+
+            //foreach (var i in ienum)
+            //{
+            //    Console.Write($"{i} ");
+            //}
+
+
+            /*
+                 IN THIS EXAMPLE - We can throw an exception when performing validation
+                 and before retrieving the iterator by returning the iterator from a local function, as the following example shows.
+             */
+
+            //IEnumerable<int> ienum2 = WithLocalFunc.OddSequence(50, 110);
+            //Console.WriteLine("Retrieved enumerator...");
+
+            //foreach (var i in ienum2)
+            //{
+            //    Console.Write($"{i} ");
+            //}
+
+            /* Local functions can be used in a similar way to handle exceptions outside of the asynchronous operation. */
+
+            #endregion
+
+            #region Delegates and Events (With Methods)
+
+            //Print print = DelegateMethod;
+            //// Because the instantiated delegate is an object, it can be passed as a parameter, or assigned to a property.
+            //// This allows a method to accept a delegate as a parameter, and call the delegate at some later time. 
+
+            //print("Hello");        
+
+            //// Passing a delegate to method.
+            //MethodWithCallback(3, 4, print);
+
+            //// Wrapping another function to that delegate.
+            //print += DelegateMethod2;
+            //print("Hello");
+
+            //// To find the number of methods in a delegate's invocation list, you may write:
+            //int invocationCount = print.GetInvocationList().GetLength(0);
+            //Console.WriteLine(invocationCount);
+
+            //// HISTORY // 
+
+            //// In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a delegate,
+            //// as shown in the following example.
+            //Print del3 = delegate (string name)
+            //    { Console.WriteLine("Notification received for: {0}", name); };
+
+            //// In C# 3.0 and later, delegates can also be declared and instantiated by using a lambda expression,
+            //// as shown in the following example.
+            //Print del4 = name => { Console.WriteLine("Notification received for: {0}", name); };
+
+
+            /*************** EVENTS ****************/
+            //// SIMPLE EXAMPLE 
+            //EventContainer eventContainer = new EventContainer();
+
+            //eventContainer.OnKeyEntered += EventSubscriber;
+            //eventContainer.OnKeyEntered += delegate (ConsoleKey key)
+            //{
+            //    Console.WriteLine(key.ToString() + " was entered: Invoked from delegate");
+            //};
+
+            //eventContainer.RaiseEvent();
+
+            //// Unsubscribing
+            //eventContainer.OnKeyEntered -= EventSubscriber;
+
+
+
+            //// ANOTHER EXAMPLE 
+            //Publisher pub = new Publisher();
+            //Subscriber sub1 = new Subscriber("sub1", pub);
+            //Subscriber sub2 = new Subscriber("sub2", pub);
+
+            //// Call the method that raises the event.
+            //pub.DoSomething();
+
+            //// Keep the console window open
+            //Console.WriteLine("Press Enter to close this window.");
+            //Console.ReadLine();
+
+            #endregion
+
+            #region Exceptions
+
+            //ExceptionExample exceptionExample = new ExceptionExample();
+            //exceptionExample.TestFinally();
+
+            #endregion
+
+            #region File System and IO
+
+            //// Using recursion
+            //RecursiveFileSearch.Run();
+            //// Using Stack
+            ////StackBasedIteration.Run(":C/");
+
+            //string sourcePath = @"C:\Windows\symbols\";
+            //// Choose a destination for the copied files.
+            //string destinationPath = @"C:\TestFolder";
+
+            //FileSystem.CopyDirectory(sourcePath, destinationPath,
+            //UIOption.AllDialogs);
+
+            #endregion
+
+            #region Indexers
+
+
+            #endregion
+
             Console.ReadLine();
         }
+
 
         #region Value/Reference Types - SendAPersonByValue
 
@@ -255,6 +549,43 @@ namespace LearnNET
         {
             // We should check for null before accessing the array data!
             Console.WriteLine($"You sent me {args?.Length ?? 0} arguments.");
+        }
+
+        #endregion
+
+        #region Out Parameters
+
+        public static void OutTest(out int a)
+        {
+            a = 8;
+        }
+
+        #endregion
+
+        #region Delegates 
+
+        public static void DelegateMethod(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public static void DelegateMethod2(string message)
+        {
+            Console.WriteLine(message + " - 2");
+        }
+
+        public static void MethodWithCallback(int param1, int param2, Print callback)
+        {
+            callback("The number is: " + (param1 + param2).ToString());
+        }
+
+        #endregion
+
+        #region Events
+
+        public static void EventSubscriber(ConsoleKey key)
+        {
+            Console.WriteLine(key.ToString() + " was entered");
         }
 
         #endregion
