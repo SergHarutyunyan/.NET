@@ -20,6 +20,7 @@ using Learn.DelegatesAndEvents;
 using Learn.Exceptions;
 using Learn.FileSystemAndIO;
 using Microsoft.VisualBasic.FileIO;
+using Learn.Indexers;
 
 namespace Learn
 {
@@ -517,6 +518,8 @@ namespace Learn
 
             #region Indexers
 
+            //SampleCollection<long> sampleCollection = new SampleCollection<long>();
+            //sampleCollection[0] = 98;
 
             #endregion
 
